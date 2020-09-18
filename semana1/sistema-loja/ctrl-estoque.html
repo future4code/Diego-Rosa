@@ -5,67 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div>
-        <p>Basket Store</p>
-    </div>
+    <div id="cabeçalho">
+
+        <div class="welcome">
     
-    <div>
-        <a href="index.html">Página Inicial</a>
-        <a href="ctrl-estoque.html">Controle de Estoque</a>
-        <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
+            <h1><em>Basket Store</em>!</h1>
+
+    
+        </div>
+        
+        <div class="menu">
+    
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="ctrl-estoque.html">Controle de Estoque</a></li>
+                    <li><a href="add-produto.html">Adicionar Produto</a></li>
+                    <li><a href="funcionarios.html">Funcionários</a></li>
+                </ul>
+            </nav>
+    
+        </div>
     </div>
 
-    <h2>Controle de Estoque</h2>
-
-    <table>
-        <tr>
+<div id="controle-estoque">
+    <h2 class="ctrl-estoque">Controle de Estoque</h2>
+    
+    <table id="tabela-produtos">
+        <tr class="title-table">
             <th>Foto</th>
             <th>Descrição</th>
             <th>Preço (R$)</th>
             <th>Quantidade disponível</th>
         </tr>
-
-        <tr>
-            <td><img src="img/regata-vigor-basketball.jpg" alt="Imagem regata de basquete"/></td>
-            <td> Uniforme de basquete Vigor </td>
-            <td> R$ 100,00</td>
-            <td> 50 Uniformes restantes</td>
+        
+        <tr class="uni-vigor">
+            <td><img src="img/regata-vigor-basketball.jpg" alt="Imagem regata de basquete" class="uniforme-vigor"/></td>
+            <td class="descriçao-uni1"> Uniforme de basquete Vigor </td>
+            <td class="preço-uni1"> R$ 100,00</td>
+            <td class="quantidade-uni1"> 50 Uniformes restantes</td>
         </tr>
-
-        <tr>
-            <td><img src="img/conjunto-basketball.jpg" alt="Imagem regata de basquete" height="850px"/></td>
-            <td> Uniforme de basquete cusmizavel </td>
-            <td> R$ 120,00 </td>
-            <td> 40 Uniformes restantes </td>
+        
+        <tr class="uni-custom">
+            <td><img src="img/conjunto-basketball.jpg" alt="Imagem regata de basquete" class="uniforme-custom"/></td>
+            <td class="descriçao-uni2"> Uniforme de basquete cusmizavel </td>
+            <td class="preço-uni2"> R$ 120,00 </td>
+            <td class="quantidade-uni2"> 40 Uniformes restantes </td>
         </tr>
-
-        <tr>
-            <td><img src="img/spalding-ball-nba.jpg" alt="imagem de bola de basquete da spalding nba"/></td>
-            <td> Bola de basquete Spalding nike NBA  </td>
-            <td> R$ 240,00 </td>
-            <td> 100 bolas Spalding nike NBA </td>
+        
+        <tr class="spalding-ball">
+            <td><img src="img/spalding-ball-nba.jpg" alt="imagem de bola de basquete da spalding nba" class="img-spalding"/></td>
+            <td class="descriçao-ball1"> Bola de basquete Spalding nike NBA  </td>
+            <td class="preço-ball1"> R$ 240,00 </td>
+            <td class="quantidade-ball1"> 100 bolas Spalding nike NBA </td>
         </tr>
-
-        <tr>
-            <td><img src="img/nike-ball.jpg" alt="Imagem bola de basquete da nike" height="220px"/> </td>
-            <td> Bola da nike </td>
-            <td> R$ 190,00 </td>
-            <td> 200 bolas da nike restantes </td>
+        
+        <tr class="nike-ball">
+            <td><img src="img/nike-ball.jpg" alt="Imagem bola de basquete da nike" class="img-nike-ball"/> </td>
+            <td class="descriçao-ball2"> Bola da nike </td>
+            <td class="preço-ball2"> R$ 190,00 </td>
+            <td class="quantidade-ball2"> 200 bolas da nike restantes </td>
         </tr>
         
         <!-- Crie mais uma linha desta tabela abaixo \/ -->
-
-        <tr>
-            <td><img src="img/Nike-Kyrie-4-Red-Carpet.jpg" alt="imagem tenis de basquete" height="200px"></td>
-            <td> Tenis de basquete Nike Kyrie 4 Red Carpet</td>
-            <td> R$ 600,00</td>
-            <td> 10 Tenis de basquete NK4RC restantes</td>
+        
+        <tr class="tenis-kyrie"> 
+            <td><img src="img/Nike-Kyrie-4-Red-Carpet.jpg" alt="imagem tenis de basquete" class="img-tenis-kyrie"></td>
+            <td class="descriçao-kyrie"> Tenis de basquete Nike Kyrie 4 Red Carpet</td>
+            <td class="preço-kyrie"> R$ 600,00</td>
+            <td class="quantidade-kyrie"> 10 Tenis de basquete NK4RC restantes</td>
         </tr>
-
+        
     </table>
-
+</div>
+    
 </body>
 </html>

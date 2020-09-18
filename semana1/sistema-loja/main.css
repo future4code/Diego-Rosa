@@ -1,0 +1,252 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    background-color:#d9d9d9;
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+/*cabeçalho da pagina*/
+
+#cabeçalho  {
+    text-align: center;
+    background-color: #404040;
+    padding-top: 10px;
+    padding-bottom: 0px;   
+
+}
+
+.welcome{ 
+    color: #fff;
+    background-color: 404040;
+    margin-bottom: 0px;
+}
+
+/*Menu da pagina*/
+
+
+
+.menu {
+    height: 43px;
+    align-items: right;
+    background-color: #404040;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+
+    
+
+}
+
+nav > a {
+    text-decoration: none;
+    color: #ffffffff;
+    font-weight: 200;
+    
+}
+
+nav ul {
+
+    margin-top: 0px;
+   display:flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*conteudo da pagina*/
+#content {
+    
+    height: 800px;
+    background-image: url(img/dunk-lb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:#fff;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 25px;
+}
+
+/*rodape da pagina*/
+
+#rodape {
+    text-align: center;
+    height: 200px;
+   
+}
+
+.facebook-icon {
+    height:60px;
+}
+
+
+.instagram-icon {
+    height:60px;
+   
+}
+
+.twitter-icon {
+    height:60px;
+}
+
+/*Controle de estoque*/
+
+#controle-estoque {
+    background-color: #fff;
+    padding-left: 30%;
+    
+}
+
+.ctrl-estoque {
+   text-align: center;
+   padding-top: 200px;
+   padding-bottom: 200px;
+   padding-right: 30%;
+   font-size: 30px;
+}
+
+/*tabela*/
+
+#tabela-produtos {
+
+    border: 3px solid black;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.title-table{
+    background-color: burlywood;
+    
+}
+
+/*uniforme vigor*/
+.uniforme-vigor {
+    height: 400px;
+    align-items: center;
+}
+
+.uni-vigor {
+    border: 3px solid black;
+    
+}
+
+.descriçao-uni1 , .preço-uni1, .quantidade-uni1{
+    border: 3px solid black;
+    text-align: center;
+}
+
+/*Uniforme customer*/
+
+.uniforme-custom {
+    height: 400px;
+    align-items: center;
+}
+
+.uni-custom {
+    border: 3px solid black;
+    
+}
+
+.descriçao-uni2 , .preço-uni2, .quantidade-uni2{
+    border: 3px solid black;
+    text-align: center;
+}
+
+/*Bola de basquete Spalding nike NBA*/
+
+.spalding-ball {
+    height: 400px;
+    align-items: center;
+}
+
+.img-spalding {
+    padding-left: 60px;
+    height: 200px;
+}
+
+.descriçao-ball1 , .preço-ball1, .quantidade-ball1{
+    border: 3px solid black;
+    text-align: center;
+}
+
+/*Bola de basquete da nike*/
+
+.nike-ball {
+    height: 200px;
+    align-items: center;
+}
+
+.img-nike-ball {
+    align-items: center;
+    height: 200px;
+    padding-left: 60px;
+}
+
+.descriçao-ball2 , .preço-ball2, .quantidade-ball2{
+    border: 3px solid black;
+    text-align: center;
+}
+
+/*Tennis nike kyrie*/
+
+.tenis-kyrie {
+    align-content: center;
+    align-items: center;
+}
+
+.img-tenis-kyrie {
+    align-content: center;
+    height: 200px;
+    
+}
+
+.descriçao-kyrie , .preço-kyrie, .quantidade-kyrie{
+    border: 3px solid black;
+    text-align: center;
+}
+
+/*Adicionar produto*/
+#content-produto{
+    align-items: center;
+
+}
+#add-produto {
+    
+    background-color: rebeccapurple;
+            
+             background: #6C7A89;
+             display: flex;
+             flex-direction: row;
+             justify-content: center;
+             align-items: center;
+    
+}
+
+.form-produto{
+    align-items: center;
+    
+}
+
+/*funcionarios*/
+.container {
+             width: 100vw;
+             height: 100vh;
+             background: #6C7A89;
+             display: flex;
+             flex-direction: row;
+             justify-content: center;
+             align-items: center;
+         }
