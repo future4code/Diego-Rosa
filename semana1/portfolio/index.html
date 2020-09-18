@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Diego dos Santos Rosa">
+    <meta name="Description" content="Site pessoal para apresentação de portfólio">
+    <meta name="Keyword" content="Desenvolvimento web full stack, html, css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Personal's Page</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    
+    <!--
+        Menu para navegaçao entre as paginas.
+    -->
+    <!-- Um menu na parte superior da tela com links para as demais áreas do portfólio.-->
+
+      <div id="menu-nav">
+          <img src="img/full-stack-logo.jpg" alt="logo full stack" height="60px" class="full-stack-logo">
+            
+        <header>
+                <nav>
+                    <ul>
+                        <li><a href="about-me">Sobre mim </a></li>
+                        <li><a href="Galeria">Projetos</a></li>
+                        <li><a href="skills">Skills</a></li>
+                        <li><a href="contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+     
+
+        <!-- Um texto descrevendo quem é você. Uma foto sua é **opcional**.-->
+        <div id="about-me">
+          
+            <h1>Diego's personal page</h1>
+            <img src="img/me.jpg" alt="foto de perfil do Diego" class="foto-perfil" height="100px">
+            
+            <h2>Olá, Sou o Diego. Prazer em conhece-l@</h2>
+            <p>Tenho 23 anos, sou estudante  de Desenvolvimento Web Full-Stack</p>
+        
+        </div>
+
+        <!-- Uma lista de instituições de ensino e empregadores prévios. Fica a critério do aluno quais instituições incluir nessa lista, pedimos que inclua pelo menos a Labenu.-->
+        <div id="lista-instituinçoes">
+            <h3>Instituiçôes de ensino/Empregadores prévios</h3>
+            
+            <ul>
+                <li> <a href="">Labenu</a></li>
+                <li><a href="">Universade de Estacio</a></li>
+                <li><a href="">Anhanguera Educacional</a></li>
+                <li><a href="">DevMedia</a></li>
+            </ul>
+        </div>
+
+        <!-- Uma galeria de projetos de software que você trabalhou. Deve haver uma maneira de interagir com essa galeria de projetos e abrir uma página que você deve criar para cada projeto. -->
+        <!-- Uma página para cada projeto que você colocou no item anterior. Essa página deve ter (pelo menos) uma imagem do projeto, um título, uma descrição e uma lista de tecnologias utilizadas. Por enquanto você pode utilizar os projetos do curso como exemplo, incluindo o projeto de seleção.-->
+        <div id="galeria-projetos">
+          
+            <h3>Minha galeria projetos </h3>
+
+            <div class="projeto-seletivo1">
+                <a href="https://Projeto-Seletivo-L.ultrabrain.repl.co"><img src="img/Projeto-Seletivo-Labenu.jpg" alt="imagem do projeto seletivo da Labenu" height="300px"></a>
+            </div>
+
+            <div class="projeto-seletivo2">
+                <a href="https://Desafio-pratico.ultrabrain.repl.co"><img src="img/projeto-pessoal2.png" alt="imagem projeto Labenu" height="300px"></a>
+            </div>
+
+            <div class="proejto-seletivo3">
+                 <a href="https://Meu-site.ultrabrain.repl.co"><img src="img/projeto-pessoal.jpg" alt="" height="300px"></a>
+            </div>
+        
+        </div>
+
+        <!-- Uma lista de habilidades que você possui (técnicas e comportamentais). Para cada habilidade, coloque um breve texto descrevendo um ponto forte seu que justifique o destaque.-->
+        <div id="skills">
+            <div id="soft-skills">
+                
+                <h3>Soft Skills</h3>
+                
+                <img src="" alt="">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. 
+                    Lorem Ipsum has been the industry's <br>standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of <br>type and scrambled it to make a type specimen
+                   </p>
+            </div>
+
+            <div id="hard-skills">
+                <h3>Hard Skills</h3>
+        
+                <img src="img" alt="">
+                <p>Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry. 
+               
+                    when an unknown printer took a galley of type and <br>
+                    ok. It has survived not only five centuries,<br> but also the leap into electronic typesetting, 
+                    </p>
+            </div>
+        </div>
+        <!-- Uma formulário para contato. Ele deve receber nome, email e texto. Nessa etapa o formulário não precisa mandar email ou interagir com o usuário.-->
+        <div id="contato">
+            
+            <h3>Meu formulário pra contato<img src="img/smile-icon.jpg" alt="icone de smile" height="30px" class="smile-icon"></h3>
+            <form action="">
+                
+                <input type="text" name="nome" placeholder="Digite seu nome aqui"><br>
+
+                <input type="text" name="email" placeholder="Digite seu email aqui"><br>
+
+                
+                <textarea type="text" name="" class="text-area" cols="30" rows="10" placeholder="Digite sua mensagem aqui"></textarea>
+
+            </form>
+        </div>
+        
+        <!-- Uma lista de redes sociais e links seus para contato. Sugerimos linkedin, github, email, twitter, facebook, etc ...-->
+        <div id="rodape">
+        
+            <footer class="mensagem">
+        
+                <h3>Envie-me uma menssagem nas redes sociais abaixo <img src="img/smile-icon.jpg" alt="icone de smile" height="30px" class="smile-icon"></h3>
+                
+                <ul>
+                    <li><a href=""><img src="img/whatsapp-icon.jpg" alt="icone do whatsapp" height="60px" class="whatsapp-icon"></a></li>
+                    <li><a href=""><img src="img/facebook-icon.jpg" alt="icone do facebook" height="60px" class="facebook-icon"></a></li>
+                    <li><a href=""><img src="img/linkedin-icon.jpg" alt="icone do linkedin" height="60px" class="linkedin-icon"></a></li>
+                  </ul>
+            </footer>
+        </div>
+</body>
+</html>
