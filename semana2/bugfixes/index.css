@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     font-style: italic;
+    
 }
 
 h2 {
@@ -100,10 +101,15 @@ div img {
 div:nth-child(2),
 div:last-child {
     text-align: center;
+
 }
 
 table {
     width: 60%;
+   margin: auto;
+   padding: 10px;
+   text-align: center;
+  
 }
 
 td button {
