@@ -1,0 +1,166 @@
+body {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+/*cabeçalho*/
+#menu-nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.full-stack-logo{
+    border-radius: 100px;
+    height: 70px;
+    padding-top: 10px;
+    padding-left: 40px;
+
+
+}
+
+header ul{
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 13px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding-right: 40px;
+  
+}
+
+ul{
+    list-style: none;
+}
+
+/*Sobre mim*/
+
+#about-me{
+    
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color:  #e6e6e6;
+}
+
+h1{
+    color: #595959;
+}
+
+#about-me h2 {
+    color: #595959;
+}
+
+.foto-perfil {
+   border-radius: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*Instituiçoes*/
+#lista-instituiçoes {
+    
+    text-align: center;
+    color: #595959;
+}
+
+#lista-instituiçoes h3{
+    padding-bottom: 50px;
+}
+
+
+#lista-instituiçoes ul li a{
+    text-decoration: none;
+    list-style: none;
+    padding-right: 50px;
+}
+
+/*Galeria*/
+#galeria{
+    background-image: url(img/tijolo-background.jpg);
+    text-align: center;
+    
+}
+
+#galeria h2{
+    color:#595959 ;
+    padding-top: 60px;
+    padding-bottom: 150px;
+}
+
+.projetos{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+/*Skills*/
+#skills{
+   
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    color: #fff;
+
+}
+
+#skills h2{
+    color: #595959 ;
+}
+
+.soft-skills{
+    height: 400px;
+    width: 350px;
+    background-color: #595959;
+    border-radius: 40px;
+}
+
+
+.hard-skills{
+    height: 400px;
+    width: 350px;
+    background-color:#595959;
+    border-radius: 40px;
+}
+
+/*Contato*/
+#contato{
+    padding-top: 250px;
+    text-align: center;
+  
+}
+
+#contato h3 {
+  color: #595959;
+}
+
+.form{
+    
+}
+
+#rodape{
+    background-color: #e6e6e6;
+    text-align: center;
+}
+
+#rodape h3 {
+   color:  #595959;
+}
