@@ -1,0 +1,90 @@
+/*Estilos gerais*/
+*{
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Cabeçalho*/
+.cabeçalho{
+    background-color: #cceeff;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+
+
+header{
+    color:  #404040;
+    padding-left: 50px;
+    padding-top: 7px;
+    
+}
+
+#div-search{
+    background-color:#E0EEEE;
+    border:solid 2px #a1a1a1;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+    margin-top: 7px;
+    
+   
+   
+    
+}
+
+#txt-search{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+}
+
+#btn-search{
+    border:none;
+  float:left;
+  height:32px;
+  border-radius:0 7px 7px 0;
+  width:70px;
+  font-weight:bold;
+  background:#80d4ff;
+}
+
+#div-search img{
+    float: left;
+}
+
+/*conteudo*/
+main {
+    display: flex;
+    height: 837px;
+   flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 200px;
+   
+} 
+
+
+main img{
+    height: 200px;
+    width: 240px ;
+}
+
+/*rodape*/
+footer{
+    height: 30px;
+    background-color: #b3e6ff;
+    padding-left: 50px;
+    padding-top: 15px;
+}
