@@ -5,70 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DumonTube</title>
     <link rel="stylesheet" href="main.css">
+
 </head>
-<body>
-    <!--Tela Principal
-        Mstrar uma lista dos vídeo dispostas em uma grade 4x4. Cadade item
-        da lista deve possuir uma imagem e o nome refentes ao vídeo.
-    -->
+<body> 
     
-    <div class="cabeçalho">
-        <header>
+    <header>
             <h1>DumonTube</h1>
-        </header>
         <div id="div-search">
-            <img src="img/search-flat-icon.jpg" alt="Buscar..." height="30px">
+            <img src="img/search-flat-icon.jpg" alt="Buscar...">
             <input type="text" id="txt-search" placeholder="Buscar...">
             <button id="btn-search">Buscar</button>
-        </div>
-    </div>
-    <!--
-        Tela de Detalhe do Vídeo
-        Ao clicar num vídeo da lista Tela Principal, deve abrir a Tela d Detalhe
-        de Video. Nesta tela, devem ser mostrados o títulos do Vídeo e o arquivo de vídeo em si.
-    -->
-    <main>
-       <section >
+        <div>
+    </header>
+    
+    <main class="main1">
+        
+        <section>
+            <div>
+                <img src="img/natural.jpg" alt="paisagem...">
+                <a href="paisagem.html"><button type="submit" value><p>Assistir paisagem</p></button></a>
+            </div>
 
-            <section>
-                <a href=""> <img src="img/natural.jpg" alt="paisagem..."></a>
-            </section>
+            <div>
+                <img src="img/globulos-red.jpg" alt="globulos vermelhos...">
+                <a href="globulos.html"><button><p>Assisir Globulos</p></button></a>
+            </div>
 
-            <section>
-                <a href=""><img src="img/globulos-red.jpg" alt="globulos vermelhos..."></a>
-            </section>
-      
-           <section>
-               <a href=""><img src="img/sistema-solar-planetas.jpg" alt="sistema solar planetas ...."></a>
-           </section>
-           
-           <section>
-                <a href=""><img src="img/waves.jpg" alt="Ondas...."></a>
-           </section>
-       </section>
+            <div>
+                <img src="img/sistema-solar-planetas.jpg" alt="sistema solar planetas ....">
+                <a href=""><button><p>Assistir Sistema Solar</p></button></a>
+            </div>
 
-            
-        <section>   
-            <section>
-                <a href=""><img src="img/ventania.jpg" alt="ventania..."></a>
-            </section>
-            
-            <section>
-                <a href=""><img src="img/habit.jpg" alt="Coelho....."></a>
-            </section>
-                   
-            <section>
-                <a href=""><img src="img/space.jpg" alt="espaço..."></a>   
-            </section>
-
-                <a href=""><img src="img/foquete.jpg" alt="foguete..."></a>
+            <div>
+                <img src="img/waves.jpg" alt="Ondas....">
+                <a href=""><button><p>Assistir Ondas</p></button></a>
+            </div>
         </section>
-            <!--
-                Layouts Gerais
-                As duas telas devem possuir um header (cabeçalhe) e um footer (rodapé). O header deve conter 
-                o título do site e uma barra de busca. ja footer, uma mensagem qualquer (ivente!).
-            -->  
-    </main>
+
+        <section>
+            <div>
+                <img src="img/ventania.jpg" alt="ventania...">
+                <a href=""><button><p>Assistir Ventania</p></button></a>
+            </div>
+
+            <div>
+                <img src="img/habit.jpg" alt="Coelho.....">
+                <a href=""><button><p>Assistir Coelho</p></button></a>
+            </div>
+
+            <div>
+                <img src="img/space.jpg" alt="galaxya...">
+                <a href=""><button><p>Assistir Galaxya</p></button></a>
+            </div>
+
+            <div>
+                <img src="img/foquete.jpg" alt="foguete...">
+                <a href=""><button><p>Assistir Foqguete</p></button></a>
+            </div>
+        </section>
+</main>
     <footer><p>Hello! I am footer!</p></footer>
 </body>
 </html>
