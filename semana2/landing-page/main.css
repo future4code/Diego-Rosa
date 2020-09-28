@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -6,194 +7,163 @@
     padding: 0;
 }
 
-@media screen and (max-width:1200px) {
 
-        /*Cabeçalho da página*/
-        
-        .center{
-            max-width: 1200px;
-        }
-        
-        header {
-            background-color: #364959;
-            box-shadow: 5px 8px 13px#878887;
-            display: flex;
-            justify-content: space-between;
-            left: 0;
-            top: 0;
-            padding-bottom: 10px ;
-            position: fixed;
-            text-align: center;
-            width: 100% ;
-        }
-        
-        
-        .logo-4safe{
-            border-radius: 100%;
-            margin-left: 50px;
-            height:130px;
-        }
-        
-        header nav ul li{
-            background-color:#557373;
-            border-radius: 6%;
-            color: #fff;
-            display: inline-block;
-            flex-direction: column ;
-            list-style: none;
-            text-align: center;
-            text-decoration: none;
-            margin-top: 7px;
-            margin-right: 30px;
-            padding: 3px;
-        }
-        
-        header nav ul li:hover{
-            background-color: #A6D973;
-        }
-        
-        /*Conteudo da página*/
-        
-        #serviços{
-            padding-top: 200px;
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: center;          
-        }
-        
-        .seguro-img{
-            height: 300px;
-            width: 400px;
-            padding: 1em;
-            border-radius: 10%;
-            
-        }
-        
-        
-        
-        /*Rodape da página*/
-        
-        
-        main{
-            padding-top: 250px;
-            background-color: #8D9AA6;
-            
-        }
-        
-        #main-container {
-            height: 800px;
-            display: grid;
-            grid-template-columns: repeat(2, 400px );
-            grid-template-rows: repeat(3, 600px);
-            justify-content: center;
-            padding-top:100px ;         
-        }
-        
-        main div #content-responsive{
-            
-            background-color:#eee;
-            border: 5px solid #fff;
-            box-shadow: 5px 8px 13px#878887;
-            margin: 2px;
-        }
-        
-        h3, h2, p{
-            padding: 1em;
-            color: #1a1a1a;
-        }
-        
-        #sobre{
-            box-shadow: 5px 8px 13px#878887;
-            padding-top:40em ;
-            display: grid;
-            grid-template-columns: repeat(2, 400px);
-            grid-template-rows: 330px;
-            justify-content: center;
-        }
-        
-        #empresas-parceiras div{
-            padding-top: 50px;
-            box-shadow: 5px 8px 13px#878887;
-            display: grid;
-            grid-template-columns: repeat(2, 200px );
-            grid-template-rows: repeat(2, 2fr);
-            justify-content: center;
-            
-            
-        }
-        
-        .parcerias-img{
-            height: 200px;
-        }
-        
-        #contato{
-            height: 700px;
-            padding-top: 150px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            
-        }
-        
-        
-        .fomr-img{
-            height: 430px;
-        }
-        
-        
-        #contato input, textarea{
-            border-radius: 5%;
-            border: none;
-            padding-top: 1em;
-            margin: 1em;
-        }
-        
-        #contato button{
-            background-color: papayawhip;
-            border: none;
-            height: 30px;
-            width: 70px;
-        }
-        #contato button:hover{
-            background-color: #A6D973 ;
-        cursor: pointer;
-    }
 
-    .contato-img{
-        height: 50px;
-        border-radius: 150%;
-        background-color: peru;
-    }
-
-    form{
-        background-color: #364959;
-        height: 400px; 
-        padding-top: 30px;
-    }
-
-    footer{
-        background-color:#364959;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    footer li{
-        list-style: none;
-    }
-
-    footer button{
-        border: 1px solid #A6D973;
-        background-color:#364959;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    footer button:hover{
-        background-color: #A6D973;
-    }
-
-    footer ul li, #contato h3,h2 {
-        color: #fff;
-    }
+body{
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    text-align: center;
 }
 
+
+header{
+    background-color: #AEB7BF;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 8px 13px grey;
+    margin-bottom: 100px;
+}
+
+
+.logo-4safe{
+    border-radius: 100%;
+    margin-left: 50px;
+    height:130px;
+}
+
+header nav ul li{
+    border-radius: 6%;
+    color: #fff;
+    display: inline-block;
+    flex-direction: column ;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 7px;
+    margin-right: 30px;
+    padding: 3px;
+}
+
+header nav ul li:hover{
+    background-color: #A6D973;
+}
+
+#container{
+    margin: 20px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-01{
+    background:  #e6e6e6;
+    position: relative;
+    flex: 2;
+    max-width: 850px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 8px 13px grey;
+}
+
+.content-img{
+    height: 200px;
+    border-radius: 20px;
+}                        
+
+.card-02{
+    background: #6A8C65;
+    position: relative;
+    flex: 2;
+    max-width: 850px;
+    height: 480px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 8px 13px grey;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.card-03{
+    background: #A6D973;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 8px 13px grey;
+
+}
+
+.parcerias-img{
+    height: 250px;
+    width: 250px;
+}
+
+.card-04{
+    background: #95BF6B;
+    position: relative;
+    flex: 2;
+    max-width: 400px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 8px 13px grey;
+    margin: 100px 50px;
+}
+
+form{
+    background-color: #6A8C65;
+    max-width: 400px;
+    height: 300px;
+    margin: 50px 50px;
+}
+
+form input, textarea{
+    padding: 0.5em;
+    margin: 1em;
+}
+
+form button{
+    border: 2px solid  #95BF6B;
+    border-radius: 3%;
+    height: 2em;
+    width: 10em;
+    border: none;
+}
+
+form button:hover{
+    background-color: #A6D973;
+    cursor: pointer;
+}
+
+form h3, footer h2, h3{
+    color: #404040 ;
+}
+
+footer{
+    background: #AEB7BF;
+    height: 100px;
+    padding-top:10px ;
+    margin-top: 50px;
+}
+
+.contato-img{
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+p, h3{
+    padding: 1em;
+}
