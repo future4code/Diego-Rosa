@@ -1,4 +1,4 @@
-/*A*/
+
 let perguntas = [
     prompt('Qual é o seu nome?'),
     prompt('Qual é a sua idade'),
@@ -13,7 +13,6 @@ console.log("Resposta:", perguntas[2]);
 console.log("Resposta:", perguntas[3]);
 console.log("Resposta:", perguntas[4]);
 
-/*B*/ 
 let comidaPreferida = [
     "Macarrao com frango",
     "Strogonof de frongo",
@@ -28,8 +27,6 @@ console.log(comidaPreferida[1]);
 console.log(comidaPreferida[2]);
 console.log(comidaPreferida[3]);
 console.log(comidaPreferida[4]);
-
-/*C*/
 
 let preferidaUsuario= prompt("Qual é a sua comida preferida?");
 
@@ -54,7 +51,7 @@ let respostasBoolean = [
 ]
 
 console.log(trueOrFalse[0] + " " + respostasBoolean[0]);
-console.log(trueOrFalse[0] + " " + respostasBoolean[1]);
-console.log(trueOrFalse[0] + " " + respostasBoolean[2]);
+console.log(trueOrFalse[1] + " " + respostasBoolean[1]);
+console.log(trueOrFalse[2] + " " + respostasBoolean[2]);
 
 
