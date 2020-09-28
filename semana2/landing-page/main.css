@@ -197,29 +197,3 @@
     }
 }
 
-@media (max-width:400px){
-
-    header {
-        background-color: #364959;
-        box-shadow: 5px 8px 13px#878887;
-        height: 135px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 2fr);
-    }
-
-    #responsive{
-        height: 800px;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr );
-            grid-template-rows: repeat(1, 2fr);
-            justify-content: center;
-            padding-top:100px ;          
-    }
-
-    .main-responsive{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
