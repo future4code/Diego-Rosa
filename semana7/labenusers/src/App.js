@@ -1,7 +1,25 @@
 import React from 'react';
 import FormPage from './components/FormPage';
 import UserListPage from './components/UserListPage';
-  
+import styled from 'styled-components'
+
+  const ContainerApp = styled.div `
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    text-align:center;
+  `;
+
+  const ChangePageButton = styled.button `
+      background-color:#99ff66;
+      border-radius: 10px;
+      border:none;
+      padding: 10px;
+      margin:10px;
+      width: 200px;
+      color: #666666;
+  `;
+
 class App extends React.Component {
   state ={
     formPage: true
@@ -17,10 +35,13 @@ class App extends React.Component {
 
       return (
         
-        <div className="App">
-        {currentPage}
-        <button onClick={this.changePage}>Change Page</button>
-      </div>
+        <ContainerApp className="App">
+          {currentPage}
+        <ChangePageButton 
+        onClick={this.changePage}>
+          Change Page
+        </ChangePageButton>
+      </ContainerApp>
     );
   }
 }
