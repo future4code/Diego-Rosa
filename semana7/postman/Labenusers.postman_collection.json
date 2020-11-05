@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "2b029ac8-ff8b-44b2-8e94-4328ad0ba058",
+		"name": "Labenusers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Playlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "Responsible for creating favorite playlist"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Playlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
