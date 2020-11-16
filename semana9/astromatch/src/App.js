@@ -1,32 +1,72 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios'
-import Matches from './components/Matches/Matches'
-import Profiles from './components/Profiles/Profiles'
-import styled from 'styled-components'
-import Astrologo from './assets/astromatch-logo.png'
-//matchlogo
-//resetlogo
+import React, { useState , useEffect } from 'react';
+import axios from 'axios';
+import { AstroHomeContainer , AstroBtnContainer , AstroAppIcons , AstromatcheLogo } from './components/AstroMetches/MestheStyles';
 
-const App = () => {
-// criar a variavel de estado e função que altera o estado
-// criar a variavel de estado e funçao que altera o estado
-//criar botao pra mudar de pagina
-//fazer integação com o getProfile
-//Atualizar pagina
-//limpar os Matches
-// fazer renderização das paginas
+import Profiles from './components/AstroProfiles/AstroProfiles'
+import Matches from './components/AstroMatches/Metches'
+
+import matchesIcon from './images/matchesicon.png'
+import reset from './images/reset.svg'
+import AstrometcheLogo from './images/astrometchelogo.png'
+
+const  App = () => {
+  
+  const  [ page, setPage ] = useState('profiles')
+
+  //muda da pagina profiles pra metches
+  const changePage = () => {
+    if (page  ===  'profiles') {
+      setPage('matches')
+    } else {
+      setPage('profiles')
+    }
+  }
+  
+  //variavel de estado e função que altera o valor da variavel de estado
+  const [ profile, setProfile ] = useState()
+    
+  //bate na API e pegar os profiles
+  const getProfiles = () => {
+    axios
+    .get(`https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/person
+    `)
+    .then(response => {
+      setProfile(response.data.profile)
+    })
+    .catch (err => {
+      alert(err)
+    })
+  }
+
+  //
+  useEffect(() => {
+    getProfiles()
+  }, [])
+
+  //Pra resetar a lista de metches
+  const resetMetches = () => {
+    axios
+    .put(`https://us-central1-missao-newton.cloudfunctions.net/astroMatch/lais-petra/clear`)
+    .then(() =>
+      getProfiles(),
+      alert("Lista de metches resetada com sucesso"))
+    .catch(err =>{
+      alert(err)
+    })
+  }
+
+  //Faz a renderização condicional de profiels pra metches
+  const actualPage = page === 'profiles' ? (<AstroProfiles profile={profile} getProfiles={getProfiles}  /> ) : (<AstroMatches />)
 
   return (
-    <div>
-        {/*<AstroHome>*/}
-            {/*<AstroButton>*/}
-                {/*<AstroResetLogo/>*/}
-                {/*<AstroLogo/>*/}
-                {/*<AstroMatchLogo>*/}
-            {/*<AstroButton/>*/}
-            {/*pagina atual*/}
-        {/*<AstroHome/>*/}
-    </div>
+      <AstroHomeContainer>
+        <AstroBtnContainer>
+          <AstroAppIcons src={resetIcon} onClick={resetMetches} />  
+          <AstromatcheLogo src={AstrometcheLogo} />
+          <AstroAppIcons src={matchesIcon} onClick={changePage} />
+        </AstroBtnContainer>  
+        {actualPage}
+      </AstroHomeContainer>
   );
 }
 
