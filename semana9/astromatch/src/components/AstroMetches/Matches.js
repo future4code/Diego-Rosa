@@ -9,7 +9,7 @@ function AstroMatches () {
 
   useEffect(() => {
     axios
-    .get (`https://us-central1-missao-newton.cloudfunctions.net/astroMatch/lais-petra/matches`)
+    .get (`https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/matches`)
     .then(response => {
       setLikes(response.data.matches)
     })
