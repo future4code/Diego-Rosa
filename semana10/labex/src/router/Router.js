@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import AboutPage from "../screens/AboutUsPage/AboutPage";
-import ContactsPage from "../screens/ContactPage/ContactPage";
-import ErrorPage from "../screens/ErrorPage/ErrorPage";
-import HomePage from "../screens/HomePage/HomePage";
+import TripsPage from "../screens/Trips";
+import SingupPage from "../screens/SingupPage";
+import LoginPage from "../screens/LoginPage";
+import HomePage from "../screens/HomePage";
 
 const Router = () => {
   return (
@@ -15,22 +15,22 @@ const Router = () => {
         Também recebe pelo
         parâmetro path a URL
         da página*/}
-        <Route exact path="/sobre/:linguagem">
-          <AboutPage />
-        </Route>
-        <Route exact path="/">
+        <Route exact path="/" >
           <HomePage />
         </Route>
-        <Route exact path="/contatos">
-          <ContactsPage />
+        <Route exact path="/login/">
+          <LoginPage />
+        </Route>
+        <Route exact path="/singup">
+          <SingupPage />
         </Route>
         {/*Componente responsável por definir uma rota
         Recebe uma prop path, que tem a URL à qual aquela
         rota corresponde
         Tudo o que estiver dentro dela será renderizado
         quando o path coincidir com a URL */}
-        <Route>
-          <ErrorPage />
+        <Route exact path="/TripsPage">
+          <TripsPage  />
         </Route>
         {/*Componente responsável por permitir que apenas
         uma rota seja renderizada por vez
