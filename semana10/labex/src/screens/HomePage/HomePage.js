@@ -1,9 +1,11 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import {HeaderContainer, MainContainer, FooterContainer} from "../../components/MainStyle"
-import {SubTittle} from '../HomePage/HomeStyle'
+import  {SubTitle, FlexBox, SectionArea, Button} from '../HomePage/HomeStyle'
+import LockOpenIcon from '@material-ui/icons/LockOpen';
 
 const Home = () => {
+
     const history = useHistory();
     const goToLogin = () => {
         history.push("/login");
@@ -17,16 +19,21 @@ const Home = () => {
   return (
     <div>
       <HeaderContainer>
-        <SubTittle><strong>LabeX</strong></SubTittle>
+        <SubTitle><strong>LabeX</strong></SubTitle>
       </HeaderContainer>
       <MainContainer>
         <div>
-          <h3>Encontre as melhores viagens espaciais!</h3>
+          <h3>Seja adiministrador ou candidato</h3>
         </div>
-        <div>
-          <button onClick={goToLogin}>Admin area</button>
-          <button onClick={goToSingup}>Candidare area</button>
-        </div>
+        <FlexBox>
+          <SectionArea>
+            
+              <Button onClick={goToLogin}>Admin area</Button>
+          </SectionArea>
+          <SectionArea>
+              <Button onClick={goToSingup}>Candidare area</Button>  
+          </SectionArea>
+        </FlexBox>
 
       </MainContainer>
         <FooterContainer>

@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import TripsPage from "../screens/Trips";
 import SingupPage from "../screens/SingupPage";
 import LoginPage from "../screens/LoginPage";
-import HomePage from "../screens/HomePage";
+import HomePage from "../screens/HomePage/HomePage";
 
 const Router = () => {
   return (
