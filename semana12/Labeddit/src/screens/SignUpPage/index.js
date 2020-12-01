@@ -1,9 +1,6 @@
 import React from 'react';
-import { useForm } from '../../hooks/useForm'
-import { TextField, Button} from '@material-ui/core'
-import {FormContainer} from '../../styles/styles'
-import PageTitle from '../../components/PageTitle/index'
-import axios from 'axios'
+
+import { SingUpFlexBox, SingUpContainer} from '../../CreateGLobalStyles/GlobalStyles'
 
 const SignUpPage = () => {
    
@@ -27,34 +24,25 @@ const SignUpPage = () => {
         // }
       
 
-    return <React.Fragment>
+    return (
+    <React.Fragment>
         
-    {/* <PageTitle title={'Cadastre-se'} />
-    <FormContainer 
-    // onSubmit={onSubmitSingUp}
-    >
-            <TextField 
-                label={'Nome'} 
-                // onChange={onChangeInput}
-                // value={form['name']}
-                name={'name'}
-            />
-            <TextField 
-                label={'email'} type={'email'} 
-                // onChange={onChangeInput}
-                // value={form['email']}
-                name={'email'}
-            />
-            <TextField 
-                label={'password'} helperText="you password here" 
-                // onChange={onChangeInput}
-                // value={form['password']}
-                name={'password'}
-            />
-            
-            <Button variant={'contained'} color={'primary'} type={'submit'}>Sing-Up</Button>
-    </FormContainer> */}
+                    < SingUpFlexBox>
+                
+                            <SingUpContainer>
+                                <h1>SingUp</h1>
+                                <input type="text" name="name" placeholder="name" required/>
+                                <input type="text" name="email" placeholder="email" required/>
+                                <input type="password" name="password" placeholder="password" required/>
+                                
+                                <section>
+                                    <button>SingUp</button>
+                                </section>
+                            </SingUpContainer>
+
+                    </ SingUpFlexBox>
     </React.Fragment>
+    )
 }
 
 export default SignUpPage;

@@ -7,19 +7,16 @@ import styled from 'styled-components'
 import { ThemeProvider } from '@material-ui/core/styles'
 
 import theme from './constants/theme';
-import MainAppBar from './components/MainAppBar'
+import NavBar from './components/NavBar'
 
-const Container = styled.div`
-  padding-top: 64px;
-`
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-        <Container>
-          <MainAppBar />
-        </Container>
+        
+          <NavBar />
+        
         <Router />
       </BrowserRouter>
     </ThemeProvider>
