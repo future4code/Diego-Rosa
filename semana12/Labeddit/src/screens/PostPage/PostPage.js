@@ -1,7 +1,12 @@
 import React from 'react';
 
 const PostPage = () => {
-    return <div>Post Page</div>
+
+    return(
+        <div>
+            PostPage
+        </div>
+    )
 }
 
 export default PostPage;

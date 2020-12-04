@@ -1,19 +1,20 @@
-export const goToHomePage = (history) => {
-    history.push('/')
+export const goToLoginPage = (history) => {
+  history.push('/login')
 }
-export const goToLogin = (history) => {
-    history.push('/login')
+
+export const goToSingUpPage = (history) => {
+  history.push('/singup')
 }
-  
-export const goToSignUp = (history) => {
-    history.push('/singUp')
+
+export const goToPostPage = (history) => {
+  history.push('/postPage')
 }
-  
-export const goToFeed = (history) => {
-    history.push('/feedPage')
+
+export const goToFeedPage = (history) => {
+  history.push('/feedPage')
 }
-  
-export const goToPost = (history) => {
-    history.push(`/postPage`)
-}
-  
+
+
+
+
+
