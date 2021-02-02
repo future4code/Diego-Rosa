@@ -28,7 +28,7 @@ const  App = () => {
   //bate na API e pegar os profiles
   const getProfiles = () => {
     axios
-    .get(`https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/person
+    .get(`https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/matches
     `)
     .then(response => {
       setProfile(response.data.profile)
@@ -46,7 +46,7 @@ const  App = () => {
   //Pra resetar a lista de metches
   const resetMetches = () => {
     axios
-    .put(`https://us-central1-missao-newton.cloudfunctions.net/astroMatch/lais-petra/clear`)
+    .put(`https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/matches`)
     .then(() =>
       getProfiles(),
       alert("Lista de metches resetada com sucesso"))
